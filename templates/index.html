@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>मिट्टी Mentor</title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='icon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <section class="section1">
+    <!-- <br></br> -->
+    <nav class="navbar">
+      <img src="{{ url_for('static', filename='mentor_logo_with_plants.png')}}">
+      <a style="float:right" href="#footer">Contact</a>
+      <a style="float:right" href="#sustainable">About</a>
+      <a class="active" style="float:right" href="#home">Home</a>
+    </nav>
+    <p id="secrets">Discover The Secrets Beneath Your Feet</p>
+    <center>
+      <a id="down-arrow" href="#services" style="scroll-behavior:smooth;">
+        <img src="{{ url_for('static', filename='impact-drop-down-arrow-white.png') }}">
+      </a>
+    </center>
+  </section>
+
+  <section class="section2" id="sustainable">
+    <center>
+      <p class="solution">
+        <br>
+        Soil, Crops and Food.
+        <br>
+        A technological solution to detect which crop is suitable and most fruitful for your soil type.
+      </p>
+    </center>
+    <h1 class="SD"><b></b>Sustainable Development</b></h1>
+    <p class="solution">Technology is supposed to be utilised for the greater good.<br>Our project
+      aims to cover three vital sustainable development goals.</p>
+    <br>
+    <!--Sustainable Development Goals-->
+    <span class="project-grid">
+      <!--Card : Resource Production-->
+      <div class="space">
+        <div class="project_card">
+          <img class="goalicon" src="{{ url_for('static', filename='green_step_blocks_pattern.png') }}">
+          <h2 class="description">Resource Production</h2>
+          <p class="description">We detect the correct soil and suggest the best crops which can be grown thereby
+            ensuring sustainable
+            production patterns.</p>
+        </div>
+      </div>
+
+      <!--Card : Farmer Independence-->
+      <div class="space">
+        <div class="project_card_mid">
+          <img class="goalicon" src="{{ url_for('static', filename='/farmer_avatar_icons.png') }}">
+          <h2 class="description">Farmer Independence</h2>
+          <p class="description">Our model provides unbiased advice, reducing
+            reliance on consultants, saving costs and mitigating biasness.</p>
+        </div>
+      </div>
+
+      <!--Card : Life on Land-->
+      <div class="space">
+        <div class="project_card">
+          <img class="goalicon" src="{{ url_for('static', filename='hand_holding_seedling_icon.png') }}">
+          <h2 class="description">Enriching Life <br> on Land</h2>
+          <p class="description">When the right crop is being grown on soil, the soil resources are utilised properly
+            thereby preventing
+            desertification.</p>
+        </div>
+      </div>
+    </span>
+  </section>
+  <section id="main-part">
+    <center>
+      <h1 id="services">
+        Mentor your
+        <p style="font-weight: bold;font-size: 4rem; font-family:'Inter'; color:#08B74F; display:inline-block;">
+          Soil
+        </p>
+      </h1>
+    </center>
+    <center>
+      <span class="project-grid" id="project-grid">
+        <div class="space2">
+          <div id="detector" class="functionality">
+            <h1 class="functionality-title">Check your soil</h1>
+            <p class=" describe">Know the soil that resides on your land.</p>
+              <div style=" display: inline-block; float: right; padding:2rem; padding-top:1rem;">
+                <a href="{{ url_for('uploadSoil')}}">
+                  <button class=" button1">
+                    &nbsp;Check Now&nbsp;
+                  </button>
+                </a>
+              </div>
+          </div>
+        </div>
+        <div class="space2">
+          <div id="suggestor" class="functionality">
+            <h1 class="functionality-title">Suggest a Crop</h1>
+           <p class=" describe"> Know which crop is perfect for your soil.</p>
+              <div style=" display: inline-block; float: right; padding:2rem; padding-top:1rem;">
+                <a href="{{ url_for('uploadCrop')}}">
+                  <button class="button1">
+                    &nbsp;Learn More&nbsp;
+                  </button>
+                </a>
+              </div>
+          </div>
+        </div>
+      </span>
+    </center>
+  </section>
+  <section>
+    <center>
+      <h1 style="font-weight: bold;font-size: 4rem; font-family:'Inter' ;display: inline-block;">
+        The Future of
+        <p style="font-weight: bold;font-size: 4rem; font-family:'Inter'; color:#08B74F; display:inline-block;">
+          Farming
+        </p> is Us.
+      </h1>
+    </center>
+  </section>
+  <footer>
+    <footer class="footer" id="footer">
+      <div class="bottom-container">
+        <a class="footer-link" href="#">Home</a>
+        <a class="footer-link" href="#services">Our Services</a>
+        <a class="footer-link" href="#sustainable">About Us</a>
+        <a class="footer-link" href="#">Contact Us</a>
+        <br><br>
+        <p class="copyright">© 2024 Code Voyagers</p>
+      </div>
+
+    </footer>
+  </footer>
+</body>
+
+</html>

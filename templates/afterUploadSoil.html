@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='afterUploadCrop.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='afterUploadMediaCrop.css') }}">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Soil Detection</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="texti">
+                <h1>Here's what we found about your soil type!</h1>
+                <h3>Type : {{soil_type}}</h3>
+                <div class="text">{{desc}}</div>
+            </div>
+            <div class="image">
+                <img src={{user_image_path}} alt="" class="uploadedImage">
+            </div>
+        </div>
+        <div class="upload">
+          <form action="/predictSoil" enctype="multipart/form-data" method="post" style="display:flex">      
+            <label for="uploadImage" class="button">Upload Another Image</label>
+            <input type="file" name="image" id="uploadImage" style="display: none;">
+            <input type="submit" value="Predict" class="predict">
+            </form>
+            <a href="{{ url_for(soil_type) }}" class="liink">
+              <button class="button1">
+                Crop Suggestion
+              </button>
+            </a>
+        </div>
+        <div class="home">
+          <a href="{{ url_for('home') }}" class="liink">
+            <div class="returnToHome">Return To Home</div>
+          </a>
+        </div>
+    </div>
+  <script src="{{ url_for('static', filename='soilUpload.js') }}"></script>
+</body>
+</html>

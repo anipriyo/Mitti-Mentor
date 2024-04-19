@@ -1,0 +1,192 @@
+@media only screen and (orientation:landscape) and (max-width:1370px){
+    .image {
+        width: 45%;
+        height: 75%;
+
+    }
+
+}
+@media only screen and (orientation:landscape) and (max-width:1025px){
+    .texti {
+        height: 100%;
+        width: 50%;
+    }
+}
+@media only screen and (orientation:landscape) and (max-width:825px){
+    .texti h1 {
+        color: #66bb6a;
+        font-size: large;
+    }
+    .upload .button, .upload .predict {
+        height: 30px;
+        width: 90px;
+        font-size: 12px;
+    }
+    .text{
+        font-size: small;
+    }
+    .nav-icon img{
+        height: 20px;
+    }
+    .upload .button .upload .predict {
+        height: 30px;
+        width: 110px;
+    }
+    .texti {
+        height: 100%;
+        width: 100%;
+    }
+    .upload {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0%;
+    }
+    .returnToHome {
+        color: #66bb6a;
+        font-size: 12px;
+    }
+    .home {
+        height: 11%;
+    }
+}
+@media only screen and (orientation:landscape) and (max-width:670px){
+    .text {
+        font-size: x-small;
+    }
+    .texti {
+        height: 100%;
+        width: 67%;
+    }
+}
+@media only screen and (orientation:landscape) and (max-width:570px){
+    .texti h1 {
+        color: #66bb6a;
+        font-size: small;
+    }
+    .text {
+        font-size: xx-small;
+    }
+    .texti {
+        height: 100%;
+        width: 75%;
+    }
+    .home {
+        height: 14%;
+    }
+}
+@media only screen and (orientation:portrait) and (max-width:1025px){
+    .content {
+        height: 67%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .image {
+        width: 45%;
+        height: 50%;
+    }
+    .texti {
+        height: 100%;
+        width: 84%;
+        padding: 12%;
+    }
+    .texti h1 {
+        color: #66bb6a;
+        font-size: xx-large;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (orientation:portrait) and (max-width:770px){
+    .image {
+        width: 45%;
+        height: 38%;
+    }
+    .texti {
+        height: 100%;
+        width: 90%;
+        padding: 12%;
+    }
+
+}
+@media only screen and (orientation:portrait) and (max-width:420px){
+    .texti {
+        height: 100%;
+        width: 93%;
+        padding: 2%;
+    }
+    .upload .button , .upload .predict{
+        height: 32px;
+        width: 124px;
+    }
+    .nav-icon {
+        height: 6%;
+    }
+    .content {
+        height: 73%;
+    }
+    .texti h1 {
+        color: #66bb6a;
+        font-size: large;
+        margin-bottom: 7px;
+    }
+    .home {
+        height: 3%;
+    }
+    .text{
+        font-size: small;
+
+    }
+    .image {
+        width: 45%;
+        height: 30%;
+    }
+    .upload {
+        height: 15%;
+        margin: 0%;
+    }
+}
+@media only screen and (orientation:portrait) and (max-width:325px){
+    .nav-icon img{
+        height: 20px;
+    }
+    .nav-icon {
+        height: 4%;
+    }
+    .upload .button , .upload .predict{
+        height: 34px;
+        width: 111px;
+        font-size: 13px;
+    }
+    .upload {
+        height: 8%;
+        margin: 0%;
+    }
+    .returnToHome {
+        color: #66bb6a;
+        font-size: small;
+    }
+    .content {
+        height: 83%;
+    }
+    .image {
+        width: 45%;
+        height: 30%;
+    }
+    .home {
+        height: 5%;
+    }
+    .texti h1 {
+        color: #66bb6a;
+        font-size: medium;
+        margin-bottom: 7px;
+    }
+    .text {
+        font-size: x-small;
+    }
+}

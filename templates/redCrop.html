@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='afterUploadCrop.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='afterUploadMediaCrop.css') }}">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Crop Suggestion</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="texti">
+                <h1>Here's the best crop we found!</h1>
+                <h3>Crop : BANANA</h3>
+                <div class="text">The highest banana yields are obtained on freely drained soils where water is not limiting. Thorough soil preparation prior to planting, and maintenance of optimum pH ensures that nutrients are readily available. The return of trash will serve as a mulch as well as a valuable source of nutrients. Control of salinity and water supply management will maximise banana growth, ensuring good nutrient availablity. Nitrogen, potassium, phosphorous, calcium, magnesium and sulfur are required nutrients for an optimum banana growth.</div>
+            </div>
+            <div class="image">
+                <img src="{{url_for('static', filename='banana_crop.jpeg')}}" alt="" class="uploaded">
+            </div>
+        </div>
+      <div class="upload">
+          <label for="uploadImage" class="button">
+            <a href="{{url_for('uploadCrop') }}" class="liink">
+              Upload Another Image
+            </a>
+          </label>
+      </div>
+        <div class="home">
+            <div class="returnToHome"><a href="{{url_for('home')}}" style="text-decoration: none">Return To Home</a></div>
+        </div>
+    </div>
+</body>
+</html>

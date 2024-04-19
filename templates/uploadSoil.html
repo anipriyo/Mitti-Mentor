@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Soil Detection - मिट्टी Mentor</title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='icon.ico') }}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='uploadCrop.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='uploadMediaCrop.css') }}">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap" rel="stylesheet" /> -->
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="texti">
+        <h1>What kind of soil lies on your land?</h1>
+        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima labore, repellendus nemo velit
+          iusto, similique ad deserunt maiores sed harum laudantium. Optio vitae veniam nesciunt quibusdam minima,
+          placeat nostrum qui rerum modi ad delectus tempora quidem enim neque ab tenetur consequuntur facilis ducimus
+          aspernatur similique officiis dolor molestiae accusamus necessitatibus? Dolore saepe dicta quis illum
+          reiciendis. Necessitatibus minus dolorem asperiores quia veritatis et perferendis dolorum fugiat ab, aut
+          temporibus eligendi eius, esse at quo? Tempora, debitis. Accusantium iure eaque recusandae!</div>
+      </div>
+      <div class="image">
+        <img src="{{ url_for('static', filename='upload_soil_illustration.png') }}" alt="" srcset="">
+      </div>
+    </div>
+    <div class="upload">
+      <form action="/predictSoil" enctype="multipart/form-data" method="post" style="display:flex">      
+      <label for="uploadImage" class="button">Upload</label>
+      <input type="file" name="image" id="uploadImage" style="display: none;">
+      <input type="submit" value="Predict" class="predict">
+      </form>
+      <!-- <div class="predict">Predict</div> -->
+    </div>
+    <div class="home">
+      <a href="{{ url_for('home')}}">
+        <div class="returnToHome">Return To Home</div>
+      </a>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='soilUpload.js') }}"></script>
+</body>
+
+</html>

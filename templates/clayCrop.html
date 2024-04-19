@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='afterUploadCrop.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='afterUploadMediaCrop.css') }}">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Crop Suggestion</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="texti">
+                <h1>Here's the best crop we found!</h1>
+                <h3>Crop : PADDY</h3>
+                <div class="text">Prepare fields uniformly and as level as possible. Select the right seeding date and rate. Ensure uniform crop nutrition across the field and apply nutrition in time. Keep a uniform water level on the field, and drain the field at the right time prior to harvest. Check the field regularly for pests and control pests when necessary. Keep the fields free of weeds. Harvest at the right grain moisture content and avoid delays in threshing and drying. Clean the grain after harvesting to improve milling output. Dry paddy down to 14% moisture content. Store the paddy at the right Moisture content and protect it from insects, pests.</div>
+            </div>
+            <div class="image">
+                <img src="{{url_for('static', filename='paddy_crop.jpg')}}" alt="" class="uploaded">
+            </div>
+        </div>
+      <div class="upload">
+          <label for="uploadImage" class="button">
+            <a href="{{url_for('uploadCrop') }}" class="liink">
+              Upload Another Image
+            </a>
+          </label>
+      </div>
+        <div class="home">
+            <div class="returnToHome"><a href="{{url_for('home')}}" style="text-decoration: none">Return To Home</a></div>
+        </div>
+    </div>
+</body>
+</html>

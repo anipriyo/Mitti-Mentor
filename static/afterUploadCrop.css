@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Chivo';
+}
+.container{
+    height: 85vh;
+    width: 85%;
+    border-radius: 10px;
+    border: 3px solid #08b74f;
+    margin: auto;
+    margin-top: 7.5vh;
+    padding: 2%;
+    padding-bottom: 0%;
+}
+.nav-icon{
+    height: 10%;
+}
+.content {
+    height: 67%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.texti{
+    height: 100%;
+    width: 45%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.image{
+    width: 35%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.texti h3{
+    color: #08b74f;
+    font-size: x-large;
+}
+.image img{
+    height: 100%;
+}
+.upload{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    
+}
+.upload .button{
+  height: 50px;
+  width: 250px;
+  font-size: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #08b74f;
+  box-shadow: 5px 10px 20px #08b74f79;
+  color: white;
+  margin: 0px 15px;
+  cursor: pointer;
+  text-decoration:none;
+}
+.home{
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.returnToHome{
+    color: #08b74f;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.predict{
+  height: 50px;
+  width: 250px;
+  font-size: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #08b74f;
+  box-shadow: 5px 10px 20px #08b74f79;
+  color: white;
+  cursor: pointer;
+  border:none;
+  margin: 0px 15px;
+  display:none;
+}
+
+.predict:hover{
+  transform: scale(1.05);
+}
+
+.button1:hover{
+  transform: scale(1.05);
+}
+
+.button1{
+  height: 50px;
+  width: 250px;
+  font-size: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #08b74f;
+  box-shadow: 5px 10px 20px #08b74f79;
+  color: white;
+  border:none;
+  cursor: pointer;
+  margin: 0px 15px;
+}
+
+.liink{
+  color: white;
+  text-decoration:none;
+}

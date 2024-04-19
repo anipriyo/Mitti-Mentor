@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Chivo';
+}
+.container{
+    height: 85vh;
+    width: 85%;
+    border-radius: 10px;
+    border: 3px solid #08b74f;
+    margin: auto;
+    margin-top: 7.5vh;
+    padding: 2%;
+    padding-bottom: 0%;
+}
+.nav-icon{
+    height: 10%;
+}
+.content {
+    height: 67%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.texti{
+    height: 100%;
+    width: 45%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.texti h1{
+    color: #08b74f;
+    font-size: xx-large;
+}
+.image{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.image img{
+    height: 100%;
+}
+.upload{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.upload .button , .upload .predict{
+  height: 50px;
+  width: 150px;
+  font-size: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #08b74f;
+  box-shadow: 5px 10px 20px #08b74f79;
+  color: white;
+  cursor: pointer;
+  margin: 0px 15px;
+  border: none;
+  font-weight: bold;
+  transition-duration: 0.3s;
+}
+
+.upload .button:hover, .predict .button:hover {
+    transform: scale(1.05);
+  }
+  .predict:hover{
+    transform: scale(1.05);
+  }
+.upload .predict{
+    display: none;
+}
+.home{
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home a{
+    text-decoration: none;
+}
+.returnToHome{
+    color: #08b74f;
+    cursor: pointer;
+}

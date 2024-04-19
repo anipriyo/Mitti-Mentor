@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='afterUploadCrop.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='afterUploadMediaCrop.css') }}">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Crop Suggestion</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="texti">
+                <h1>Here's the best crop we found!</h1>
+                <h3>Crop : COTTON</h3>
+                <div class="text">Base your variety selection on proven ability for fiber quality and yield potential. Choose cotton seed genetics wisely. Protect your seed investment, establish a good stand and enhance yields with a professionally applied seed treatment. Plant under optimum weather conditions. Irrigate before plant stress occurs. Scout throughout the season for weed, disease and insect pests. Monitor your crop for growth, square size and fruit retention. Defoliate as early as possible.</div>
+            </div>
+            <div class="image">
+                <img src="{{url_for('static', filename='cotton_crop.jpeg') }}" alt="" class="uploaded">
+            </div>
+        </div>
+      <div class="upload">
+          <label for="uploadImage" class="button">
+            <a href="{{url_for('uploadCrop') }}" class="liink">
+              Upload Another Image
+            </a>
+          </label>
+      </div>
+        <div class="home">
+            <div class="returnToHome"><a href="{{url_for('home')}}" style="text-decoration: none">Return To Home</a></div>
+        </div>
+    </div>
+</body>
+</html>
