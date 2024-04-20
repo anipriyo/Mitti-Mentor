@@ -4,6 +4,9 @@ modules = ["python-3.10:v18-20230807-322e88b"]
 
 hidden = [".pythonlibs"]
 
+[packager]
+ignoredPackages = ["tensorflow"]
+
 [nix]
 channel = "stable-23_05"
 
